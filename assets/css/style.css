@@ -3201,7 +3201,7 @@ ul {
   height: 100%;
   top: 0%;
   left: 0%;
-  background-size: contain;
+  background-size: cover; /* This will make the image cover the entire banner */
   background-repeat: no-repeat;
   background-position: center;
 }
