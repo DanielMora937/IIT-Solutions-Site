@@ -2570,6 +2570,10 @@ ul {
   display: none;
 }
 
+.nav-right-part .search-bar-btn {
+  display: none;
+}
+
 /**************** sidebar-menu *************/
 .sidebar-menu {
   width: 0;
