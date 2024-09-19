@@ -2574,6 +2574,10 @@ ul {
   display: none;
 }
 
+.banner-bg-img:hover {
+  transform: none; /* Disables scaling on hover */
+}
+
 /**************** sidebar-menu *************/
 .sidebar-menu {
   width: 0;
