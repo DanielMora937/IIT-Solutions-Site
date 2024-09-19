@@ -224,24 +224,25 @@
             $('.single-select').niceSelect();
         }
 
-        /**banner-move**/
-        if ($('.banner-bg-img').length){
-            function touches(e){
-                var x = e.touches ? e.touches[0].clientX : e.clientX, 
-                y = e.touches ? e.touches[0].clientY : e.clientY;
-                var w = window.innerWidth / 2;
-                var h = window.innerHeight / 2;
-                var l = -(x - w) / (w / 1) - 1;
-                var t = -(y - h) / (h / 1) - 1;
-                TweenMax.to($('.banner-bg-img'), 1, {
-                    top: t + "%",
-                    left: l + "%"
-                }); 
-            }
-            window.addEventListener("mousemove", touches);
-            window.addEventListener("touchstart", touches);
-            window.addEventListener("touchmove", touches);
-        }
+/**banner-move**/
+// if ($('.banner-bg-img').length){
+//     function touches(e){
+//         var x = e.touches ? e.touches[0].clientX : e.clientX, 
+//         y = e.touches ? e.touches[0].clientY : e.clientY;
+//         var w = window.innerWidth / 2;
+//         var h = window.innerHeight / 2;
+//         var l = -(x - w) / (w / 1) - 1;
+//         var t = -(y - h) / (h / 1) - 1;
+//         TweenMax.to($('.banner-bg-img'), 1, {
+//             top: t + "%",
+//             left: l + "%"
+//         }); 
+//     }
+//     window.addEventListener("mousemove", touches);
+//     window.addEventListener("touchstart", touches);
+//     window.addEventListener("touchmove", touches);
+// }
+
 
         /*--------------------------------------------
             Search Popup
