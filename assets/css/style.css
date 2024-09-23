@@ -3157,8 +3157,18 @@ ul {
   z-index: 5;
 }
 
+/***
 .banner-inner .sub-title {
   color: var(--main-color);
+}
+  **/
+
+.banner-inner .sub-title {
+  color: #ffffff;
+}
+
+.banner-inner .sub-title-2 {
+  color: var(--aivons-light);
 }
 
 .banner-inner .title {
@@ -3182,6 +3192,10 @@ ul {
 
 .banner-inner.style-white .title {
   color: #fff;
+}
+
+.banner-inner.style-white .sub-title-2 {
+  color: var(--aivons-light);
 }
 
 .banner-inner.style-white .content {
