@@ -1435,7 +1435,7 @@ ul {
   width: 100%;
   left: 0;
   top: 0;
-  background: rgba(10, 24, 81, 0.88);
+  background: rgba(10, 24, 81, 0.28);
 }
 
 .bg-overlay .container {
@@ -1519,6 +1519,31 @@ ul {
 }
 
 .bg-overlay-black .bg-z-index {
+  position: relative;
+  z-index: 2;
+}
+
+.bg-overlay-white {
+  position: relative;
+  background-size: cover !important;
+}
+
+.bg-overlay-white:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(45, 73, 99, 0.25);
+}
+
+.bg-overlay-white .container {
+  position: relative;
+  z-index: 2;
+}
+
+.bg-overlay-white .bg-z-index {
   position: relative;
   z-index: 2;
 }
