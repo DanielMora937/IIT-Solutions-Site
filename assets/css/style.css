@@ -4523,8 +4523,8 @@ ul {
 
 .testimonial-thumb .thumb .quote-wrap {
   position: absolute;
-  left: 50%;
-  bottom: 0;
+  left: 100%;
+  bottom: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   text-align: center;
@@ -4936,7 +4936,7 @@ ul {
 }
 
 .single-project-inner {
-  background: #F4F8FF;
+  background: (0,0,0,0);
   border-radius: 5px;
   overflow: hidden;
   margin-bottom: 30px;
@@ -4989,8 +4989,9 @@ ul {
   margin-top: 40px;
 }
 
+
 .single-project-inner .details-wrap {
-  padding: 20px 25px;
+  padding: 10px 20px;
 }
 
 .single-project-inner .details-wrap .details-inner {
@@ -5046,6 +5047,7 @@ ul {
 .single-project-inner.style-two .details-wrap h3 {
   color: #fff;
   margin-bottom: 2px;
+  font-size: 20px;
 }
 
 .single-project-inner.style-two .details-wrap h3:hover {
@@ -5693,7 +5695,7 @@ ul {
 .testimonial-thumb-2 .thumb .quote-wrap {
   right: 0;
   left: auto;
-  bottom: 34%;
+  bottom: 50%;
   -webkit-transform: translate(50%, -50%);
   transform: translate(50%, -50%);
   background: #fff;
