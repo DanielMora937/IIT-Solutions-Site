@@ -668,6 +668,32 @@ ul {
   color: #fff;
 }
 
+.btn-black2>div {
+  flex: 1 1 auto;
+}
+
+.btn-black2 {
+  color: #fff;
+  background: var(--alt-main-color);
+  box-sizing: border-box;
+}
+
+.btn-black2:hover {
+  color: #fff;
+  background: var(--main-color);
+}
+
+.button-container {
+  box-sizing: border-box;
+  display: flex; 
+  justify-content: space-around; 
+  align-items: center; 
+  min-width: 0;
+  flex-wrap: nowrap;
+  text-align: center;
+  
+}
+
 .btn-white {
   color: var(--main-color) !important;
   background: #fff;
@@ -690,10 +716,15 @@ ul {
   color: #fff;
 }
 
+.btn-border-white>div {
+  flex: 1 1 auto;
+}
+
 .btn-border-white {
   color: #fff;
   border: 2px solid rgba(255, 255, 255, 0.7);
   line-height: 53px;
+  box-sizing: border-box;
 }
 
 .btn-border-white:hover,
@@ -1365,6 +1396,10 @@ ul {
 
 .bg-base {
   background: var(--main-color);
+}
+
+.bg-black-transparent {
+  background: rgba(2, 8, 20, 0.596);
 }
 
 .bg-green {
