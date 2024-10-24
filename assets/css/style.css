@@ -3965,13 +3965,13 @@ ul {
   border-radius: 5px;
   -webkit-transition: 0.7s;
   transition: 0.7s;
-  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.1);
   margin-bottom: 30px;
   position: relative;
   border-radius: 5px;
   overflow: hidden;
-  background: #fff;
+  background: rgba(2, 8, 20, 0.596);
 }
 
 .single-service-inner .icon-box {
@@ -3999,10 +3999,12 @@ ul {
 
 .single-service-inner .details h3 {
   font-weight: 600;
+  color: #fff;
 }
 
 .single-service-inner .details p {
   margin-bottom: 0;
+  color: #fff;
 }
 
 .single-service-inner .details-hover-wrap {
@@ -4043,7 +4045,9 @@ ul {
   margin-top: 40px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  color: #fff;
 }
+
 
 .single-service-inner.style-white {
   background: rgba(3, 11, 24, 0.6);
@@ -4136,6 +4140,10 @@ ul {
 }
 
 .single-service-inner.style-hover-base:hover .icon-box i {
+  color: #fff;
+}
+
+.single-service-inner.style-hover-base:hover .icon-box img {
   color: #fff;
 }
 
