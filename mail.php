@@ -1,9 +1,10 @@
 <?php
 if (isset($_POST['email'])) {
-
+    
+    
     // REPLACE THIS 2 LINES AS YOU DESIRE
     $email_to = "sales@iitsolutionsweb.com";
-    $email_subject = "You've got a new submission";
+    $email_subject = "You've got a new request for IIT Solutions";
 
     function problem($error)
     {
@@ -62,14 +63,17 @@ if (isset($_POST['email'])) {
     // create email headers
     $headers = 'From: ' . $email . "\r\n" .
         'Reply-To: ' . $email . "\r\n" .
-        'X-Mailer: PHP/' . phpversion();
+        'X-Mailer: PHP/' . phpversion() .
+        'MIME-Version: 1.0\r\n' .
+        'Content-type: text/html; charset=iso-8859-1\r\n';
     @mail($email_to, $email_subject, $email_message, $headers);
+    
 ?>
 
     <!-- Replace this as your success message -->
 
     Thanks for contacting us, we will get back to you as soon as possible.
-
+    You may now return to the previous page.
 <?php
 }
 ?>
