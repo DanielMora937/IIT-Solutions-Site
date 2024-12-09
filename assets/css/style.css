@@ -22,6 +22,7 @@ Version: 1.0.5
     ## Brand Area
     ## Footer
     ## Widgets
+    ## Internet
 
 # Elements
     ## accordion
@@ -8944,4 +8945,117 @@ ul {
 .footer-bottom p {
   margin-bottom: 0;
   color: #fff;
+}
+
+/*--------------------------------------------------
+    ##Internet
+---------------------------------------------------*/
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* Hero Section */
+.hero {
+  background: url('hero-bg.jpg') no-repeat center center/cover;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero-text {
+  max-width: 600px;
+  margin: auto;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Plans Section */
+.plans {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.plan-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1;
+  max-width: 300px;
+}
+
+.card.popular {
+  border: 2px solid #007bff;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Features Section */
+.features {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+/* CTA Section */
+.cta {
+  background: #007bff;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.cta-button {
+  background-color: #ffc107;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .plan-cards {
+    flex-direction: column;
+  }
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
 }
