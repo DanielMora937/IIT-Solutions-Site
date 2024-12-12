@@ -9054,6 +9054,9 @@ button {
 @media (max-width: 768px) {
   .plan-cards {
     flex-direction: column;
+    /*display: flex;
+    justify-content: center;*/
+    align-items: center;
   }
   .feature-grid {
     grid-template-columns: 1fr;
