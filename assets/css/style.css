@@ -9002,6 +9002,30 @@ body {
   font-weight: bold;
 }
 
+/* Service Intro */
+.service-intro {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f7fafc; /* Neutral light gray for a clean and professional look */
+  border-bottom: 3px solid #0056a8; /* Accent line for emphasis */
+}
+
+.service-intro h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #0056a8; /* Deep blue to align with professional branding */
+  text-transform: uppercase; /* Makes the header bold and prominent */
+}
+
+.service-intro p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #444; /* Subtle gray for readability */
+  max-width: 850px;
+  margin: 15px auto;
+}
+
+
 /* Plans Section */
 .plans {
   padding: 50px 20px;
@@ -9057,6 +9081,48 @@ button {
   margin: auto;
   text-align: center;
 }
+
+/* Why Choose Us Section*/
+.why-choose {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f7fafc;
+}
+
+.why-choose h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.feature {
+  background: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #0078d7;
+}
+
+.feature p {
+  font-size: 1rem;
+  color: #555;
+  margin: 0;
+}
+
 
 /* CTA Section */
 .cta {
@@ -9160,6 +9226,7 @@ button {
   background: #f8faff; /* Soft pastel blue background */
   text-align: center;
   color: #333;
+  border-top: 3px solid #0056a8;
 }
 
 .security-features h2 {
