@@ -23,6 +23,7 @@ Version: 1.0.5
     ## Footer
     ## Widgets
     ## Internet
+    ## Home Custom
 
 # Elements
     ## accordion
@@ -9002,6 +9003,33 @@ body {
   font-weight: bold;
 }
 
+/* Company Introduction Section */
+.company-intro {
+  background-color: #f8f9fa; /* Light gray background for a professional feel */
+  padding: 60px 20px;
+  text-align: center;
+  color: #333; /* Dark gray for text */
+}
+
+.company-intro h2 {
+  font-size: 2rem;
+  color: #0056b3; /* Deep blue for the heading */
+  margin-bottom: 20px;
+}
+
+.company-intro p {
+  font-size: 1rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 10px auto;
+  color: #555; /* Softer gray for readability */
+}
+
+.company-intro p:first-of-type {
+  font-weight: bold;
+  color: #333; /* Slightly darker gray to emphasize the first paragraph */
+}
+
 /* Service Intro */
 .service-intro {
   text-align: center;
@@ -9279,3 +9307,36 @@ button {
   line-height: 1.5;
 }
 
+/*--------------------------------------------------
+    ## Home Custom
+---------------------------------------------------*/
+
+/* Company Introduction Section for Home Page */
+.company-intro-home {
+  background-color: #f7fafc; /* Keep the background consistent with the home page */
+  padding: 50px 20px;
+  border-top: 1px solid #eaeaea; /* Subtle divider to integrate with the page flow */
+  color: #333;
+}
+
+.company-intro-home h2 {
+  font-size: 2.8rem;
+  color: #000; /*#126dfc;*/ /* Slightly muted blue to match the home page's aesthetic */
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center; /* Centered heading for balance */
+}
+
+.company-intro-home p {
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 900px;
+  margin: 10px auto;
+  color: #555;
+  text-align: center; /* Keep text centered for consistency */
+}
+
+/*.company-intro-home p:first-of-type {
+  font-weight: bold;
+  color: #444; /* Slight emphasis for the first paragraph *
+} */
