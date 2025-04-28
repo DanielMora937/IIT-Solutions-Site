@@ -9054,40 +9054,83 @@ body {
 }
 
 
-/* Plans Section */
-.plans {
-  padding: 50px 20px;
-  text-align: center;
-  background-color: #fff;
+/* Plans Area */
+.plans-area {
+  background-color: #f9f9f9;
+  padding: 80px 20px;
 }
 
-.plan-cards {
+.plans-card {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 30px 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+  height: 100%;
   display: flex;
-  gap: 20px;
-  justify-content: center;
-  margin-top: 20px;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.card {
-  background: #f4f4f4;
-  padding: 20px;
-  border-radius: 8px;
-  flex: 1;
-  max-width: 300px;
+.plans-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.card.popular {
+.plans-card h4 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: #0056b3;
+}
+
+.plans-price {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #222;
+  margin: 15px 0;
+}
+
+.plans-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.plans-features li {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Highlight the Popular Plan */
+.highlight-card {
   border: 2px solid #007bff;
+  background: #f0f7ff;
 }
 
-button {
+/* Button Styling (matches your bundles style) */
+.plans-btn-base {
   background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 10px 15px;
+  color: #ffffff;
+  padding: 12px 25px;
   border-radius: 5px;
-  cursor: pointer;
-}*/
+  text-decoration: none;
+  display: inline-flex; /* changed from inline-block */
+  align-items: center;  /* vertically center the text */
+  justify-content: center; /* horizontally center the text */
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.2;
+  height: 50px; /* consistent button height */
+  transition: background-color 0.3s;
+}
+
+.plans-btn-base:hover {
+  background-color: #0056b3;
+}
 
 /* Features Section */
 .features {
@@ -9165,18 +9208,19 @@ button {
   color: #333;
 }
 
+/**
 @media (max-width: 768px) {
   .plan-cards {
     flex-direction: column;
     /*display: flex;
     justify-content: center;*/
-    align-items: center;
+    /**align-items: center;
   }
   .feature-grid {
     grid-template-columns: 1fr;
     text-align: center;
   }
-}
+}**/
 
 /* Full-Width Plan Details */
 .plan-details.full-width {
@@ -9340,3 +9384,174 @@ button {
   font-weight: bold;
   color: #444; /* Slight emphasis for the first paragraph *
 } */
+
+/*-----------------------------------
+    ## Bundles Section
+------------------------------------*/
+
+/* Bundles Section */
+.bundle-area {
+  background-color: #f9f9f9;
+}
+
+.single-bundle-inner {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 40px 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+}
+
+.single-bundle-inner:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+.icon-box {
+  font-size: 40px;
+  color: #0056b3;
+  margin-bottom: 20px;
+}
+
+.single-bundle-inner h4 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.single-bundle-inner .price {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #0056b3;
+  margin-bottom: 20px;
+}
+
+.bundle-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bundle-features li {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Bundle Cards */
+.bundle-card {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bundle-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.bundle-card h4 {
+  font-size: 1.5rem;
+  color: #0056b3;
+  margin-bottom: 15px;
+}
+
+.bundle-card .price {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+.bundle-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.bundle-card ul li {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.bundle-card .btn {
+  margin-top: auto;
+}
+
+/* Highlight the most popular bundle */
+.bundle-card.popular {
+  border: 2px solid #0056b3;
+  background: #f0f8ff;
+}
+
+/* Bundles Intro Section */
+.bundle-intro {
+  background-color: #f8f9fa; /* Light subtle gray */
+  padding: 80px 20px;
+  border-top: 1px solid #e0e0e0; /* Soft visual divider */
+}
+
+.bundle-intro .section-title {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.bundle-intro h5.sub-title {
+  font-size: 1rem;
+  color: #007bff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.bundle-intro h2.title {
+  font-size: 2.5rem;
+  color: #002855;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.bundle-intro p.content {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.8;
+  margin-top: 20px;
+}
+
+.bundle-action {
+  background: url('/assets/img/bg/bundles-bg.webp') /*no-repeat center center/cover*/;
+  color: white;
+  padding: 120px 20px 50px 20px; /* Top 120px, Bottom 50px */
+  text-align: center;
+}
+
+.bundle-action-text {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.bundle-action-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.bundle-action-text p {
+  font-size: 1.2rem;
+  color: #e0e0e0;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
