@@ -9225,7 +9225,8 @@ body {
 /* Full-Width Plan Details */
 .plan-details.full-width {
   width: 100%;
-  background: linear-gradient(145deg, #f8fbff, #e4f0ff); /* Light pastel gradient */
+  /*background: linear-gradient(145deg, #f8fbff, #e4f0ff);*/ /* Light pastel gradient */
+  background: #ffffff;
   color: #333; /* Softer text color */
   padding: 60px 20px;
   border-top: 5px solid #cce7ff; /* Light blue accent for separation */
